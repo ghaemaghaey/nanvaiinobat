@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافه کردن کاربر</title>
+</head>
+<body>
+    <center>
+        <h1>نام کاربری و کلمه عبوررا وارد کنید</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <br>
+        <p>نام کاربری</p>
+        <input type="text" name="userName">
+        <br>
+        <p>ایمیل</p>
+        <input type="text" name="email">
+        <br>
+        <p>رمز عبور</p>
+        <input type="password" name="password" id="">
+        <br>
+        <button type="submit" >ثبت اطلاعات</button>
+    </form>
+    </center>
+</body>
+</html>
